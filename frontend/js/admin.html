@@ -1,0 +1,12 @@
+<button onclick="buatQR()">Generate QR</button>
+<img id="qr">
+
+
+<script>
+function buatQR() {
+fetch(ENDPOINT,{method:'POST',body:JSON.stringify({action:'generateQR'})})
+.then(r=>r.json()).then(d=>{
+qr.src = 'https://api.qrserver.com/v1/create-qr-code/?size=300x300&data='+ENDPOINT+'?token='+d.token;
+});
+}
+</script>

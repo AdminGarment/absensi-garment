@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Absensi QR Garmen</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h2>Absensi Karyawan</h2>
+
+
+<input id="nik" placeholder="NIK">
+<input id="nama" placeholder="Nama">
+<select id="departemen">
+<option>Sewing</option>
+<option>Cutting</option>
+<option>Finishing</option>
+<option>QC</option>
+<option>Gudang</option>
+<option>Admin</option>
+</select>
+<input id="line" placeholder="Line Produksi">
+
+
+<button onclick="absen('masuk')">Absen Masuk</button>
+<button onclick="absen('pulang')">Absen Pulang</button>
+
+
+<script src="js/app.js"></script>
+</body>
+</html>
